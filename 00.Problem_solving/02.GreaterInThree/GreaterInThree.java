@@ -41,5 +41,7 @@ public class GreaterInThree {
         else
             System.out.println("greater element is : " + c);
 
+        scanner.close();
+
     }
 }

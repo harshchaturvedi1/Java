@@ -36,6 +36,7 @@ public class LeapYear {
          * here since it is divisible b 400
          * it will be automatically be divisible by 4 and 100
          */
+        scanner.close();
 
     }
 }

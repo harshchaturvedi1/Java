@@ -49,5 +49,7 @@ public class VowelOrConsonant {
             System.out.println("consonant");
         }
 
+        scanner.close();
+
     }
 }
