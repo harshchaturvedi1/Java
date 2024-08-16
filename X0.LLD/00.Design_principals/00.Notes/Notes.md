@@ -268,6 +268,10 @@ public class Main {
 
 Don't Repeat Yourself: Avoid code duplication by abstracting out common code into functions or classes.
 
+## 3. YAGNI Principle
+
+You Aren't Gonna Need It Don't implement features until they are necessary.
+
 ```java
 class User {
     private String name;
@@ -282,10 +286,6 @@ class User {
 }
 
 ```
-
-## 3. YAGNI Principle
-
-You Aren't Gonna Need It Don't implement features until they are necessary.
 
 ## 4. KISS Principle
 
