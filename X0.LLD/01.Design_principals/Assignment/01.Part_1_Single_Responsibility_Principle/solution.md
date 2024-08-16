@@ -7,7 +7,7 @@ The given Invoice class voilated the SRP principal as it handle multiple respons
 
 As per SRP one class should handle only one responsibility whereas currently Invoice class have three responsibilities
 
-** Solution ** - to adhere the issue of SRP , there should be three different classes
+**Solution** - to adhere the issue of SRP , there should be three different classes
 
 1. Invoice class to handle invoice data
 2. InvoicePrinter class to handle invoice printing operation
