@@ -904,6 +904,7 @@ public abstract class Handler {
 ```
 
 [Back to Top](#table-of-contents)
+
 **Step 2: Implement Concrete Handlers**
 
 ```java
@@ -948,6 +949,7 @@ public class Manager extends Handler {
 ```
 
 [Back to Top](#table-of-contents)
+
 **Step 3: Use the Chain of Responsibility Pattern in the Main Class**
 
 ```java
@@ -987,4 +989,5 @@ public class Main {
 - **Handler Interface (`Handler`)**: Defines an interface for handling requests and setting the next handler.
 - **Concrete Handlers (`CSR`, `SeniorCSR`, `Manager`)**: Implement the `Handler` interface, handle specific types of requests, and pass unhandled requests to the next handler.
 - **Client Code (`Main`)**: Creates the chain of responsibility and processes requests by passing them to the first handler in the chain.
-  [Back to Top](#table-of-contents)
+
+[Back to Top](#table-of-contents)
