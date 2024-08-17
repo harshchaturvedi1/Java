@@ -3,17 +3,17 @@
 ## Table of Contents
 
 1. [Creational Patterns](#creational-patterns)
-   - [Factory Pattern](#factory-pattern)
-   - [Singleton Pattern](#singleton-pattern)
-   - [Builder Pattern](#builder-pattern)
+   - [Factory Pattern](#1-factory-pattern)
+   - [Singleton Pattern](#2-singleton-pattern)
+   - [Builder Pattern](#3-builder-pattern)
 2. [Structural Patterns](#structural-patterns)
-   - [Adapter Pattern](#adapter-pattern)
-   - [Facade Pattern](#facade-pattern)
-   - [Decorator Pattern](#decorator-pattern)
+   - [Adapter Pattern](#1-adapter-pattern)
+   - [Facade Pattern](#2-facade-pattern)
+   - [Decorator Pattern](#3-decorator-pattern)
 3. [Behavioral Patterns](#behavioral-patterns)
-   - [Observer Pattern](#observer-pattern)
-   - [Strategy Pattern](#strategy-pattern)
-   - [Command Pattern](#command-pattern)
+   - [Observer Pattern](#1-observer-pattern)
+   - [Strategy Pattern](#2-strategy-pattern)
+   - [Command Pattern](#3-command-pattern)
    - [Chain of Responsibility Pattern](#chain-of-responsibility-pattern)
 
 ---
@@ -36,7 +36,11 @@ Behavioral patterns deal with communication between objects. They help in defini
 
 ## Creational Patterns
 
+[Back to Top](#table-of-contents)
+
 ### 1. Factory Pattern
+
+[Back to Top](#table-of-contents)
 
 ### Meaning:
 
@@ -99,6 +103,8 @@ public class Main {
 
 ### 2. Singleton Pattern
 
+[Back to Top](#table-of-contents)
+
 ### Meaning:
 
 The Singleton Pattern ensures that a class has only one instance and provides a global point of access to it.
@@ -141,6 +147,8 @@ public class Main {
 ```
 
 ### 3. Builder Pattern
+
+[Back to Top](#table-of-contents)
 
 ### Meaning:
 
@@ -215,7 +223,11 @@ public class Main {
 
 ## Structural Patterns
 
+[Back to Top](#table-of-contents)
+
 ### 1. Adapter Pattern
+
+[Back to Top](#table-of-contents)
 
 ### Meaning:
 
@@ -266,6 +278,8 @@ public class Main {
 ```
 
 ### 2. Facade Pattern
+
+[Back to Top](#table-of-contents)
 
 ### Meaning:
 
@@ -341,6 +355,8 @@ public class Main {
 ```
 
 ### 3. Decorator Pattern
+
+[Back to Top](#table-of-contents)
 
 ### Meaning:
 
@@ -418,7 +434,11 @@ public class Main {
 
 ## Behavioral Patterns
 
+[Back to Top](#table-of-contents)
+
 ### 1. Observer Pattern
+
+[Back to Top](#table-of-contents)
 
 ### Meaning:
 
@@ -513,6 +533,8 @@ public class Main {
 
 ### 2. Strategy Pattern
 
+[Back to Top](#table-of-contents)
+
 ### Meaning:
 
 The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. It lets the algorithm vary independently from clients that use it.
@@ -583,6 +605,8 @@ public class Main {
 ```
 
 ### 3. Command Pattern
+
+[Back to Top](#table-of-contents)
 
 ### Meaning:
 
@@ -847,6 +871,8 @@ public class Main {
 
 ### Chain of Responsibility Pattern
 
+[Back to Top](#table-of-contents)
+
 ### Meaning
 
 The Chain of Responsibility Pattern passes a request along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
@@ -877,6 +903,7 @@ public abstract class Handler {
 
 ```
 
+[Back to Top](#table-of-contents)
 **Step 2: Implement Concrete Handlers**
 
 ```java
@@ -920,6 +947,7 @@ public class Manager extends Handler {
 
 ```
 
+[Back to Top](#table-of-contents)
 **Step 3: Use the Chain of Responsibility Pattern in the Main Class**
 
 ```java
@@ -952,8 +980,11 @@ public class Main {
 
 ```
 
+[Back to Top](#table-of-contents)
+
 ### Explanation
 
 - **Handler Interface (`Handler`)**: Defines an interface for handling requests and setting the next handler.
 - **Concrete Handlers (`CSR`, `SeniorCSR`, `Manager`)**: Implement the `Handler` interface, handle specific types of requests, and pass unhandled requests to the next handler.
 - **Client Code (`Main`)**: Creates the chain of responsibility and processes requests by passing them to the first handler in the chain.
+  [Back to Top](#table-of-contents)
