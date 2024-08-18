@@ -1,0 +1,2 @@
+- **Question 5:** Design and implement a Builder Pattern for a travel itinerary planner. The planner should allow users to build itineraries with various activities (e.g., flights, hotel stays, tours).
+  - **Example:** Implement the `Itinerary` and `ItineraryBuilder` classes. Demonstrate building different travel itineraries with various activities.

@@ -1,0 +1,1 @@
+- **Question 6:** Extend the Builder Pattern to include optional travel insurance and car rental services. Modify the ItineraryBuilder to handle these optional components and demonstrate their usage.
