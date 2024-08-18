@@ -1,0 +1,2 @@
+- **Question 1:** Implement a Factory Pattern for a meal delivery service. The service should create different types of meals (e.g., VeganMeal, NonVeganMeal, GlutenFreeMeal) based on user preferences.
+  - **Example:** Create a `MealFactory` class that produces instances of different meal types based on a string input. Demonstrate creating various meals based on user dietary restrictions.
