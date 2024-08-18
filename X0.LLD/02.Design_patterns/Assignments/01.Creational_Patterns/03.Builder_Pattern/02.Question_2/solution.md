@@ -81,20 +81,20 @@ class Itinerary {
 public class Main {
     public static void main(String[] args) {
        Itinerary itineraryWithExtras = new Itinerary.ItineraryBuilder()
-    .setFlightNo("13d22")
-    .setHotelStay("Oyo")
-    .setCabNo("KA34E2345")
-    .setInsurance("INS123456")
-    .setRentedCarNo("CAR98765")
-    .build();
+                                                    .setFlightNo("13d22")
+                                                    .setHotelStay("Oyo")
+                                                    .setCabNo("KA34E2345")
+                                                    .setInsurance("INS123456")
+                                                    .setRentedCarNo("CAR98765")
+                                                    .build();
 
 System.out.println(itineraryWithExtras.toString());
 
 Itinerary itineraryWithoutExtras = new Itinerary.ItineraryBuilder()
-    .setFlightNo("45x78")
-    .setHotelStay("Marriott")
-    .setCabNo("KA12B6789")
-    .build();
+                                                .setFlightNo("45x78")
+                                                .setHotelStay("Marriott")
+                                                .setCabNo("KA12B6789")
+                                                .build();
 
 System.out.println(itineraryWithoutExtras.toString());
 
