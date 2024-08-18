@@ -1,0 +1,2 @@
+- **Question 3:** Create a Singleton class for a printer spooler that manages print jobs in an office environment. Ensure that only one instance of the spooler exists and handles all print jobs.
+  - **Example:** Implement the `PrinterSpooler` class with methods to add, process, and view print jobs. Demonstrate its usage in a multi-threaded scenario where multiple print jobs are submitted concurrently.
