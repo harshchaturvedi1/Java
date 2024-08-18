@@ -1,0 +1,1 @@
+- **Question 4:** Implement a Singleton class for a global settings manager in a web application. This manager should handle settings like theme, language, and user preferences. Demonstrate its usage by changing and retrieving settings from different parts of the application.
