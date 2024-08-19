@@ -1,0 +1,1 @@
+- **Question 12:** Extend the Decorator Pattern to support seasonal flavors (e.g., Pumpkin Spice, Peppermint). Modify the decorators to include these new flavors and demonstrate their usage.
