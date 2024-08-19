@@ -1,0 +1,1 @@
+- **Question 8:** Extend the Adapter Pattern to support multiple legacy inventory systems. Modify the adapter to handle different inventory systems and demonstrate its usage.
