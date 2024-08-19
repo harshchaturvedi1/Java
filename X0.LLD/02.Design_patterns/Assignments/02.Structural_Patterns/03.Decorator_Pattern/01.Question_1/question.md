@@ -1,0 +1,2 @@
+- **Question 11:** Implement a Decorator Pattern to enhance a base coffee beverage with additional ingredients (e.g., Milk, Sugar, Vanilla). Create decorators for each ingredient and demonstrate their usage.
+  - **Example:** Implement the `Coffee` interface and `BasicCoffee` class, along with `MilkDecorator`, `SugarDecorator`, and `VanillaDecorator` classes. Demonstrate creating a coffee with different combinations of ingredients.
