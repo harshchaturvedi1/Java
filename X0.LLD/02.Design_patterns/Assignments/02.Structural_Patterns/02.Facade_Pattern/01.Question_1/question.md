@@ -1,0 +1,2 @@
+- **Question 9:** Create a Facade Pattern for a smart home automation system that includes lights, thermostats, and security cameras. The facade should provide a simple interface to control these devices.
+  - **Example:** Implement the `SmartHomeFacade` class with methods to turn on/off lights, set the thermostat, and monitor security cameras. Demonstrate its usage in a scenario where a user controls all devices through the facade.
