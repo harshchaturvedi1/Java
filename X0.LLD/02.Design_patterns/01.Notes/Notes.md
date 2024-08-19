@@ -277,6 +277,84 @@ public class Main {
 
 ```
 
+### example 2
+
+```java
+
+// Target Interface
+interface MediaPlayer {
+    void play(String audioType, String fileName);
+}
+
+// Adaptee Classes
+class VlcPlayer {
+    public void playVlc(String fileName) {
+        System.out.println("Playing vlc file. Name: " + fileName);
+    }
+}
+
+class Mp4Player {
+    public void playMp4(String fileName) {
+        System.out.println("Playing mp4 file. Name: " + fileName);
+    }
+}
+
+// Adapter Class
+class MediaAdapter implements MediaPlayer {
+    VlcPlayer vlcPlayer;
+    Mp4Player mp4Player;
+
+    public MediaAdapter(String audioType) {
+        if(audioType.equalsIgnoreCase("vlc")) {
+            vlcPlayer = new VlcPlayer();
+        } else if(audioType.equalsIgnoreCase("mp4")) {
+            mp4Player = new Mp4Player();
+        }
+    }
+
+    @Override
+    public void play(String audioType, String fileName) {
+        if(audioType.equalsIgnoreCase("vlc")) {
+            vlcPlayer.playVlc(fileName);
+        } else if(audioType.equalsIgnoreCase("mp4")) {
+            mp4Player.playMp4(fileName);
+        }
+    }
+}
+
+// Client Class
+class AudioPlayer implements MediaPlayer {
+    MediaAdapter mediaAdapter;
+
+    @Override
+    public void play(String audioType, String fileName) {
+        // Play mp3 directly
+        if(audioType.equalsIgnoreCase("mp3")) {
+            System.out.println("Playing mp3 file. Name: " + fileName);
+        }
+        // Use the adapter for other formats
+        else if(audioType.equalsIgnoreCase("vlc") || audioType.equalsIgnoreCase("mp4")) {
+            mediaAdapter = new MediaAdapter(audioType);
+            mediaAdapter.play(audioType, fileName);
+        } else {
+            System.out.println("Invalid media. " + audioType + " format not supported");
+        }
+    }
+}
+
+//  Usage
+public class Main {
+    public static void main(String[] args) {
+        AudioPlayer audioPlayer = new AudioPlayer();
+
+        audioPlayer.play("mp3", "song.mp3");
+        audioPlayer.play("mp4", "movie.mp4");
+        audioPlayer.play("vlc", "video.vlc");
+        audioPlayer.play("avi", "documentary.avi");
+    }
+}
+```
+
 ### 2. Facade Pattern
 
 [Back to Top](#table-of-contents)
