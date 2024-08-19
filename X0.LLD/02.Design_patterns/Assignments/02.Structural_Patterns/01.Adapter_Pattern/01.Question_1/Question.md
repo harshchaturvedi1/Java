@@ -1,0 +1,2 @@
+- **Question 7:** Implement an Adapter Pattern to integrate a new e-commerce platform with an existing inventory management system. Create an adapter that allows the new platform to access inventory data from the legacy system.
+  - **Example:** Implement the `LegacyInventorySystem` class, the new `Inventory` interface, and the `InventoryAdapter` class. Demonstrate how the new e-commerce platform uses the adapter to check stock levels.
