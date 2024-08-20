@@ -1,0 +1,2 @@
+- **Question 13:** Implement an Observer Pattern for a stock market application where users can subscribe to updates on specific stocks. The application should notify subscribers when the stock prices change.
+  - **Example:** Implement the `Stock` class, `Observer` interface, and `StockObserver` class. Demonstrate subscribing to stock updates and receiving notifications when prices change.
