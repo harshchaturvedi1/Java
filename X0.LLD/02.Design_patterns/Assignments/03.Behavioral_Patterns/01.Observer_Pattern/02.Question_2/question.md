@@ -1,0 +1,1 @@
+- **Question 14:** Extend the Observer Pattern to allow users to unsubscribe from stock updates. Demonstrate the ability to subscribe, receive updates, and unsubscribe.
